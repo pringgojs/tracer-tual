@@ -1,0 +1,110 @@
+/*----------------------------------------------------------------------- 
+fonts [*1]
+-------------------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i,600,600i,700');
+
+
+/*----------------------------------------------------------------------- 
+Global [*2]
+-------------------------------------------------------------------------*/
+
+* { box-sizing: border-box; }
+img {
+    max-width: 100%;
+    height: auto;
+}
+body {
+    margin: 0 auto;
+    padding: 0;
+    overflow-x: hidden;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: .5px;
+    background-color: #ffffff;
+    color: #050505;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+
+@media (min-width: 770px) {
+    .container {
+        width: 770px;
+        max-width: 95%;
+    }
+
+}
+
+@media (min-width: 980px) {
+    .container {
+        display: table;
+        min-width: 770px;
+    }
+}
+/*------------------------------------------------------------------------
+Clases
+-------------------------------------------------------------------------*/
+.logo {
+    height: 90px;
+    width: auto;
+    padding: 15px;
+}
+.content-container {
+    clear: both;
+    margin-top: 120px;
+}
+.node-question {
+    margin-bottom: 20px; 
+}
+.node-answer {
+    cursor:pointer;
+    background:rgba(0,0,0,.06);
+    border:none;
+    padding:20px;
+    margin-bottom: 20px;
+    display:block;
+    text-align:left;
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    -ms-border-radius:4px;
+    -o-border-radius:4px;
+    border-radius:4px;
+}
+
+.node-answer:hover {
+    background: #c3c3c3;
+    color: #ffffff
+}
+.active {
+    background: #777777;
+    color: #ffffff
+}
+
+.node-answer-input {
+    cursor:pointer;
+    background:rgba(0,0,0,.06);
+    border:none;
+    padding:20px;
+    margin-bottom: 20px;
+    display:block;
+    text-align:left;
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    -ms-border-radius:4px;
+    -o-border-radius:4px;
+    border-radius:4px;
+    width: 100%;
+}
+
+.box-shadow-code {
+	-webkit-box-shadow: 0px 0px 15px 2px rgba(222, 222, 222, 0.5);
+	-moz-box-shadow: 0px 0px 15px 2px rgba(222, 222, 222, 0.5);
+	box-shadow: 0px 0px 15px 2px rgba(222, 222, 222, 0.5);
+}

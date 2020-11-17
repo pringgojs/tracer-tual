@@ -1,0 +1,35 @@
+<?php
+
+use Illuminate\Support\Facades\Schema;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Database\Migrations\Migration;
+
+class CreateClassTable extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::create('class', function (Blueprint $table) {
+            $table->increments('nomor');
+            $table->integer('program')->unsigned()->nullable();
+            $table->integer('jurusan')->unsigned()->nullable();
+            $table->integer('kelas')->unsigned()->nullable();
+            $table->string('pararel')->nullable();
+            $table->string('kode')->nullable();
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::dropIfExists('class');
+    }
+}

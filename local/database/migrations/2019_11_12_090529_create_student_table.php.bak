@@ -1,0 +1,36 @@
+<?php
+
+use Illuminate\Support\Facades\Schema;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Database\Migrations\Migration;
+
+class CreateStudentTable extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::create('students', function (Blueprint $table) {
+            $table->increments('nomor');
+            $table->integer('nrp')->unsigned()->nullable();
+            $table->integer('kelas')->unsigned()->nullable();
+            $table->string('nama')->nullable();
+            $table->dateTime('tgllulus')->nullable();
+            $table->integer('angkatan')->unsigned()->nullable();
+            $table->integer('tahun_masuk')->unsigned()->nullable();
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::dropIfExists('students');
+    }
+}
