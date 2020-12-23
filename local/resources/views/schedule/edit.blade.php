@@ -94,12 +94,12 @@
         var x = new mdDateTimePicker.default({
             type: 'date',
             init: moment('{{$schedule->start_date}}'),
-            future: moment('2020-12-30')
+            future: moment('2050-12-30')
         });
         var y = new mdDateTimePicker.default({
             type: 'date',
             init: moment('{{$schedule->end_date}}'),
-            future: moment('2020-12-30')
+            future: moment('2050-12-30')
         });
         document.getElementById('start-date').addEventListener('click', function() {
             x.toggle();
