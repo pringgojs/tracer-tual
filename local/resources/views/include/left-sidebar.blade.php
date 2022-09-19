@@ -24,15 +24,15 @@
                             <li><a href="{{url('schedule')}}">Jadwal Tracer Studi</a></li>
                         </ul>
                     </li>
-                    {{-- <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="mdi mdi-city"></i><span class="hide-menu">User Survey</span></a>
+                    <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="mdi mdi-city"></i><span class="hide-menu">User Survey</span></a>
                         <ul aria-expanded="false" class="collapse">
                             <li><a href="{{url('user-survey/company')}}">Perusahaan</a></li>
                             <li><a href="{{url('user-survey/kuesioner')}}">Kuesioner</a></li>
                             <li><a href="{{url('user-survey/periode')}}">Periode Survey</a></li>
                             <li><a href="{{url('user-survey/company-account')}}">Akun Perusahaan</a></li>
-                            <li><a href="{{url('user-survey/report')}}">Laporan</a></li>
+                            {{-- <li><a href="{{url('user-survey/report')}}">Laporan</a></li> --}}
                         </ul>
-                    </li> --}}
+                    </li>
                     <li> <a class="waves-effect waves-dark" href="{{url('user')}}" aria-expanded="false"><i class="mdi mdi-account-key"></i><span class="hide-menu">User</span></a></li>
                     <li> <a class="waves-effect waves-dark" href="{{url('/logout')}}" aria-expanded="false" onclick="event.preventDefault(); document.getElementById('logout-form').submit();"><i class="mdi mdi-logout"></i><span class="hide-menu">Keluar</span></a></li>
                 @endif
